@@ -19,6 +19,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <body>    
+        <h3 style={{color:'red', fontSize:24 + 'px', textAlign:'center'}}>  And this is the body element, soon to it's own component...
+        </h3>
+      </body>
     </div>
   );
 }
