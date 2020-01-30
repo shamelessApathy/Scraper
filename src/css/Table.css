@@ -3,13 +3,35 @@
 	padding-left:20px;
 	padding-right:20px;
 	background-color:#333;
+	height:100vh;
 }
+#wrapper .wrap {
+	width:90%;
+	margin:0 auto;	
+}
+
+#wrapper .wrap button {
+	margin-right:10px;
+}
+
 #wrapper-table {
-	width:100%;
+	width:90%;
 	margin:0 auto;
-	height:auto;
 	position:relative;
 	background-color:#ccc;
+}
+
+#productPrice {
+	width:40px;
+}
+
+#productMinQuantity {
+	width:50px;
+}
+
+#trHeading {
+	padding-left:10px;
+	padding-right:10px;
 }
 
 table, th, tr {
