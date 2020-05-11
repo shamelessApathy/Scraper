@@ -10,6 +10,7 @@ import FontLink from './FontLink'
 class Table extends React.Component {
 	AddProduct() {
 		alert("Add Product button pressed!")
+		{{renderAddProductTable()}}
 	}
 	ModifyProduct() {
 		alert("Modify product clicked!")

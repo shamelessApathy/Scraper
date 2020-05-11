@@ -10,8 +10,8 @@ class ProductForm extends React.Component {
 	render() {
 		return (
 			<div>
-				<h2>This is the product form</h2>
-			</div>
+				<tr>This</tr>
+				<tr></tr>
 			);
 	}
 }
