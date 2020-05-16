@@ -12,6 +12,7 @@ class ProductForm extends React.Component {
 			<div>
 				<tr>This</tr>
 				<tr></tr>
+			</div>
 			);
 	}
 }

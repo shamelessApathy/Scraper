@@ -14,6 +14,13 @@
 	margin-right:10px;
 }
 
+#toScrapeButton {
+	height:40px;
+	background-color:#ff580f;
+	margin-left:5px;
+	padding:5px;
+}
+
 #wrapper-table {
 	width:90%;
 	margin:0 auto;

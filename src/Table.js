@@ -10,10 +10,25 @@ import FontLink from './FontLink'
 class Table extends React.Component {
 	AddProduct() {
 		alert("Add Product button pressed!")
-		{{renderAddProductTable()}}
+		
 	}
 	ModifyProduct() {
 		alert("Modify product clicked!")
+	}
+	InitScraper(e) {
+		let event = e
+		let target = event.target
+		let urlContainer = target.previousSibling
+		let urlValue = urlContainer.value 
+		if (urlValue)
+		{
+			fetch("/api/catch.php", {
+				method: "POST",
+				body: urlValue	
+			}).then(function(response){
+				console.log(response)
+			});
+		}
 	}
 	render() {
 		return (
@@ -22,6 +37,7 @@ class Table extends React.Component {
 					<div class="wrap">
 						<button className="productModifier" type="button" change="add" onClick={this.AddProduct}> Add Product <FontPlus /></button>
 						<button className="productModifier" type="button" change="modify" onClick={this.ModifyProduct}>Modify Product <FontEdit /></button>
+						<input placeholder="Product URL to scrape" id="toScrape" name="toScrape" /><button id="toScrapeButton" onClick={this.InitScraper}>Scrape Product</button>
 					</div>
 					<table id="wrapper-table">
 						<thead>
