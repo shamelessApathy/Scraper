@@ -16,6 +16,7 @@ class Table extends React.Component {
 		alert("Modify product clicked!")
 	}
 	InitScraper(e) {
+		console.log("Scraper start button is registering")
 		let event = e
 		let target = event.target
 		let urlContainer = target.previousSibling
@@ -34,7 +35,7 @@ class Table extends React.Component {
 		return (
 			<div>
 				<div id="wrapper">
-					<div class="wrap">
+					<div className="wrap">
 						<button className="productModifier" type="button" change="add" onClick={this.AddProduct}> Add Product <FontPlus /></button>
 						<button className="productModifier" type="button" change="modify" onClick={this.ModifyProduct}>Modify Product <FontEdit /></button>
 						<input placeholder="Product URL to scrape" id="toScrape" name="toScrape" /><button id="toScrapeButton" className="productModifier" onClick={this.InitScraper}>Scrape Product <FontScraper /></button>

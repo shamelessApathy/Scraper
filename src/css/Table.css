@@ -59,3 +59,21 @@ th {
 	color:white;
 	margin-left:10px;
 }
+.productFormModule {
+	background:#333;
+	font-size:14px;
+	color:orange;
+	margin:0 auto;
+	margin-top:10px;
+}
+.productFormModule thead tr th {
+	background-color:#429bf5;
+
+}
+.closeIt {
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:10;
+	color:orange;
+}
