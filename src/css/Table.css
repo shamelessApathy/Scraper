@@ -15,10 +15,7 @@
 }
 
 #toScrapeButton {
-	height:40px;
 	background-color:#ff580f;
-	margin-left:5px;
-	padding:5px;
 }
 
 #wrapper-table {
@@ -60,4 +57,5 @@ th {
 	padding:5px;
 	background-color:#429bf5;
 	color:white;
+	margin-left:10px;
 }

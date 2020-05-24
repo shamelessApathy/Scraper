@@ -1,11 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import "./css/Table.css"
 import ProductForm from "./ProductForm"
 import FontPlus from './FontPlus'
 import FontEdit from './FontEdit'
 import FontImage from './FontImage'
 import FontLink from './FontLink'
+import FontScraper from './FontScraper'
 
 class Table extends React.Component {
 	AddProduct() {
@@ -37,7 +37,7 @@ class Table extends React.Component {
 					<div class="wrap">
 						<button className="productModifier" type="button" change="add" onClick={this.AddProduct}> Add Product <FontPlus /></button>
 						<button className="productModifier" type="button" change="modify" onClick={this.ModifyProduct}>Modify Product <FontEdit /></button>
-						<input placeholder="Product URL to scrape" id="toScrape" name="toScrape" /><button id="toScrapeButton" onClick={this.InitScraper}>Scrape Product</button>
+						<input placeholder="Product URL to scrape" id="toScrape" name="toScrape" /><button id="toScrapeButton" className="productModifier" onClick={this.InitScraper}>Scrape Product <FontScraper /></button>
 					</div>
 					<table id="wrapper-table">
 						<thead>

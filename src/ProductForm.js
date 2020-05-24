@@ -1,5 +1,4 @@
 import React from "react"
-import ReactDOM from 'react-dom'
 import "./css/ProductForm.css"
 
 class ProductForm extends React.Component {
