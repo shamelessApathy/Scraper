@@ -17,18 +17,21 @@ class Table extends React.Component {
 	}
 	InitScraper(e) {
 		console.log("Scraper start button is registering")
-		let event = e
-		let target = event.target
-		let urlContainer = target.previousSibling
-		let urlValue = urlContainer.value 
-		if (urlValue)
-		{
-			fetch("/api/catch.php", {
+		let urlContainer = document.getElementById("toScrape")
+		let urlValue = urlContainer.value
+		console.log(urlValue)
+		if (urlValue) {
+			console.log('its registered as having a value')
+				fetch("/api/catch.php", {
 				method: "POST",
 				body: urlValue	
 			}).then(function(response){
 				console.log(response)
 			});
+		}
+		else {
+			alert("You must have a URL input into the text area next to the button!")
+			document.getElementById("toScrape").setAttribute("style","border:2px solid red; background-color:yellow;")
 		}
 	}
 	render() {

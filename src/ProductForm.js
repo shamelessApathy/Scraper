@@ -6,12 +6,15 @@ class ProductForm extends React.Component {
 		super(props);
 		this.state = {display: props.display}
 	}
-	DisplayFalse() {
-		this.setState({display:false})
-	}
-	CloseProductForm = () => {
+	
+    OpenProductForm = () => {
+    	this.setState({display: true})
+    }
+
+    CloseProductForm = () => {
     	this.setState({display: false})
     }
+	
 	BuildProductForm() {
 		return (
 			<div>
@@ -29,6 +32,24 @@ class ProductForm extends React.Component {
 						<td>100 per kg</td>
 						<td>10kg</td>
 					</tr>
+					<tr>
+						<td>Example</td>
+						<td>https://aliexpress.com/example</td>
+						<td>Example Inc.</td>
+						<td>China</td>	
+						<td>https://photobucket.com/path/to/example.jpg</td>
+						<td>100 per kg</td>
+						<td>10kg</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>https://aliexpress.com/example</td>
+						<td>Example Inc.</td>
+						<td>China</td>	
+						<td>https://photobucket.com/path/to/example.jpg</td>
+						<td>100 per kg</td>
+						<td>10kg</td>
+					</tr>										
 					</tbody>							
 				</table>
 			</div>

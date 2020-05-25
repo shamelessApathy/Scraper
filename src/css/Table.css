@@ -60,11 +60,13 @@ th {
 	margin-left:10px;
 }
 .productFormModule {
-	background:#333;
+	background:#808080;
 	font-size:14px;
 	color:orange;
 	margin:0 auto;
 	margin-top:10px;
+	text-align:center;
+
 }
 .productFormModule thead tr th {
 	background-color:#429bf5;
@@ -76,4 +78,12 @@ th {
 	top:0;
 	z-index:10;
 	color:orange;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+table td {
+  border: 5px solid #333;
 }
